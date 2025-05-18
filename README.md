@@ -15,18 +15,18 @@ So, you're crazy enough to try or mess around with my configuration — welcome!
 
 As of now, there is only a manual installation. Here's what to do:
 
-### 📁 Step 1: Copy Config Files
+### 📁 Copy Config Files
 Copy everything inside this repo's `.config` folders to your local `~/.config/` directory - or only the modules that interest you.
 
 ---
 
-### 🖼️ Step 2: Set the Wallpaper
+### 🖼️ Set the Wallpaper
 Copy the `wallpaper.png` to any folder of your choice.  
 Then, edit the `~/.config/hypr/hyprpaper.conf` and make sure it points to the correct wallpaper path.
 
 ---
 
-### 📦 Step 3: Install Dependencies
+### 📦 Install Dependencies
 
 You’ll need a few essential packages for this config to work properly.  
 I couldnt keep track of all the dependencies, but here are some of the main requirement

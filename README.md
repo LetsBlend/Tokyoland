@@ -20,8 +20,6 @@ Copy everything inside this repo's `.config` folders to your local `~/.config/` 
 
 ---
 
-#### 🖼️ Set the Wallpaper
-Copy the `wallpaper.png` to any folder of your choice.  
 Then, edit the `~/.config/hypr/hyprpaper.conf` and make sure it points to the correct wallpaper path.
 
 ---

@@ -1,0 +1,245 @@
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: Lexend, "JetBrainsMono NFP";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  /* background-color: #1e1e2e; */
+  /* background-color: #181825; */
+  background-color: transparent;
+  /* background-color: rgba(24, 24, 37, 0.6); */
+}
+
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0rem;
+  border-radius: 0px;
+  /* background-color: #181825; */
+  background-color: #1e1e2e;
+  color: #99c2c9;
+}
+
+/* Round only the first workspace */
+#workspaces button:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+/* Round only the last workspace */
+#workspaces button:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+#workspaces button:hover {
+  /* color: #1e1e2e; */
+  background-color: #2c2c42;
+}
+
+#workspaces button.active {
+  background-color: #1e1e2e;
+  color: #62cde3;
+}
+
+#workspaces button.urgent {
+  background-color: #1e1e2e;
+  color: #f38ba8;
+}
+
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#custom-spotify,
+#custom-notification,
+#cpu,
+#temperature,
+#tray,
+#memory,
+#window,
+#battery,
+#network,
+#bluetooth,
+#custom-weather,
+#power-profiles-daemon,
+#disk,
+#custom-colorpicker,
+#mpris {
+  padding: 0.3rem 1.0rem;
+  margin: 0.4rem 0rem;
+  border-radius: 0px;
+  /* background-color: #FFFFFF; */
+  background-color: #1e1e2e;
+  color: #6dc0d1;
+}
+
+#clock:hover,
+#clock.simpleclock:hover,
+#pulseaudio:hover,
+#custom-logo:hover,
+#custom-power:hover,
+#custom-spotify:hover,
+#custom-notification:hover,
+#cpu:hover,
+#temperature:hover,
+#tray:hover,
+#memory:hover,
+#window:hover,
+#battery:hover,
+#network:hover,
+#bluetooth:hover,
+#custom-weather:hover,
+#custom-disk:hover,
+#custom-colorpicker:hover,
+#power-profiles-daemon:hover,
+#mpris:hover {
+  background-color: #2c2c42;
+}
+
+#mpris.playing {
+  margin: 0.4rem 0.5rem 0.4rem 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  /* color: #a6e3a1; */
+}
+
+#mpris.paused {
+  margin: 0.4rem 0.5rem 0.4rem 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: #9399b2;
+}
+
+#custom-sep {
+  padding: 0px;
+  color: #585b70;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#cpu {
+  /* color: #94e2d5; */
+}
+
+#temperature {
+  /* color: #8cd190; */
+}
+
+#memory {
+  /* color: #cba6f7; */
+}
+
+#clock {
+  /* color: #b29ffc; */
+}
+
+#clock.simpleclock {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  /* color: #b29ffc; */
+}
+
+#window {
+  color: #cdd6f4;
+}
+
+#pulseaudio {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  /* color: #b4befe; */
+}
+
+#pulseaudio.muted {
+  color: #a6adc8;
+}
+
+#custom-logo {
+  color: #89b4fa;
+}
+
+#custom-power {
+  color: #f38ba8;
+}
+
+#battery {
+  margin: 0.4rem 0.5rem 0.4rem 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  /* color: #db81c5;  */
+}
+
+#network {
+  /* color: #b29ffc; */
+}
+
+#bluetooth {
+  /* color: #b29ffc; */
+}
+
+#battery.critical {
+  color: #f38ba8; 
+}
+
+#battery.critical {
+  color: #fab387;
+}
+
+#disk {
+  color: #fab387;
+}
+
+#custom-weather {
+  margin: 0.4rem 0.5rem 0.4rem 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  /* color: #b29ffc; */
+}
+
+#power-profiles-daemon.performance {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: #e3a3b5;
+}
+
+#power-profiles-daemon.balanced {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  /* color: #b29ffc; */
+}
+
+#power-profiles-daemon.power-saver {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: #a3d1a6;
+}
+
+#custom-notification {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+#custom-colorpicker {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+tooltip {
+  background-color: #181825;
+  border: 2px solid #91aac4;
+}

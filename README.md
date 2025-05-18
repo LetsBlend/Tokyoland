@@ -17,36 +17,39 @@ As of now, there is only a manual installation.
 
 #### 📁 Copy Config Files
 Copy everything inside this repo's `.config` folders to your local `~/.config/` directory - or only the modules that interest you.
-
----
-
-#### 🖼️ Set the Wallpaper
-Copy the `wallpaper.png` to any folder of your choice.  
 Then, edit the `~/.config/hypr/hyprpaper.conf` and make sure it points to the correct wallpaper path.
+For firefox you will need the dark reader plugin and import the Dark-Reader-Settings.json file, then you want to get the firefox Color addon and paste the url in the Freifox-Color-theme file to load the theme.
 
 ---
 
 #### 📦 Install Dependencies
 
 You’ll need a few essential packages for this config to work properly.  
-I couldnt keep track of all the dependencies, but here are some of the main requirement
+I couldnt keep track of all the dependencies, but here are some that i remembered.
+QT Application theming is managed by kvantum, while gtk applications are managed by nwg-look
+Also the tokyonight theme for Qt seems to be a bit broken, which is why I am using the cattpuccin moccha blue for dolphin, which is very similar.
 
-##### 🧪 From Official Repos (Pacman):
 ```bash
-sudo pacman -S hyprland waybar wofi kitty rofi \
-             hyprpaper hyprlock hypridle \
-             grim slurp wl-clipboard \
-             nwg-look qt5ct qt6ct \
-             gtk-engine-murrine ttf-nerd-fonts-symbols-common \
-             playerctl brightnessctl
+hyprland waybar wofi kitty rofi
+hyprpaper hyprlock hypridle
+wl-clipboard
+nwg-look qt5ct qt6ct kvantum
+gtk-engine-murrine ttf-nerd-fonts-symbols-common
+...
 ```
+---
 
-##### 🧪 From AUR (via yay):
 ```bash
-yay -S swww cava tokyonight-gtk-theme-git tokyonight-icons-git
+ttf-jetbrains-mono-nerd
+nvim
+vesktop
+spotify
+spicetify - and its tokyonighttheme
+dolphin
+baloon
+firefox
+...
 ```
-
-> Make sure `yay` is installed: `sudo pacman -S yay`
 
 ---
 

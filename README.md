@@ -13,25 +13,25 @@ My goal is to eventually shape this into a well-rounded, **Tokyonight-themed** H
 ### Welcome to Tokyoland!
 So, you're crazy enough to try or mess around with my configuration — welcome!
 
-As of now, there is only a manual installation. Here's what to do:
+As of now, there is only a manual installation.
 
-### 📁 Copy Config Files
+#### 📁 Copy Config Files
 Copy everything inside this repo's `.config` folders to your local `~/.config/` directory - or only the modules that interest you.
 
 ---
 
-### 🖼️ Set the Wallpaper
+#### 🖼️ Set the Wallpaper
 Copy the `wallpaper.png` to any folder of your choice.  
 Then, edit the `~/.config/hypr/hyprpaper.conf` and make sure it points to the correct wallpaper path.
 
 ---
 
-### 📦 Install Dependencies
+#### 📦 Install Dependencies
 
 You’ll need a few essential packages for this config to work properly.  
 I couldnt keep track of all the dependencies, but here are some of the main requirement
 
-#### 🧪 From Official Repos (Pacman):
+##### 🧪 From Official Repos (Pacman):
 ```bash
 sudo pacman -S hyprland waybar wofi kitty rofi \
              hyprpaper hyprlock hypridle \
@@ -41,7 +41,7 @@ sudo pacman -S hyprland waybar wofi kitty rofi \
              playerctl brightnessctl
 ```
 
-#### 🧪 From AUR (via yay):
+##### 🧪 From AUR (via yay):
 ```bash
 yay -S swww cava tokyonight-gtk-theme-git tokyonight-icons-git
 ```
@@ -50,11 +50,11 @@ yay -S swww cava tokyonight-gtk-theme-git tokyonight-icons-git
 
 ---
 
-## ❤️ Love goes out to
+### ❤️ Love goes out to
 
 - My boy [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for the original color inspiration
 - The Hyprland community making a desktop environmant satisfying to use.
 
 ---
 
-### 🧪 Enjoy the ride. Welcome to **Tokyoland**!
+#### 🧪 Enjoy the ride. Welcome to **Tokyoland**!

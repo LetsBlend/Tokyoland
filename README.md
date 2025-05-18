@@ -18,6 +18,7 @@ As of now, there is only a manual installation.
 #### 📁 Copy Config Files
 Copy everything inside this repo's `.config` folders to your local `~/.config/` directory - or only the modules that interest you.
 Then, edit the `~/.config/hypr/hyprpaper.conf` and make sure it points to the correct wallpaper path.
+For firefox you will need the dark reader plugin and import the Dark-Reader-Settings.json file, then you want to get the firefox Color addon and paste the url in the Freifox-Color-theme file to load the theme.
 
 ---
 
@@ -25,8 +26,8 @@ Then, edit the `~/.config/hypr/hyprpaper.conf` and make sure it points to the co
 
 You’ll need a few essential packages for this config to work properly.  
 I couldnt keep track of all the dependencies, but here are some that i remembered.
-QT Applications are managed by kvantum, while gtk are managed by nwg-look
-Also theme QT tokyonight theme seems to be a bit broken, which is why I am using the cattpuccin moccha blue theme
+QT Application theming is managed by kvantum, while gtk applications are managed by nwg-look
+Also the tokyonight theme for Qt seems to be a bit broken, which is why I am using the cattpuccin moccha blue for dolphin, which is very similar.
 
 ```bash
 hyprland waybar wofi kitty rofi
@@ -44,6 +45,9 @@ nvim
 vesktop
 spotify
 spicetify - and its tokyonighttheme
+dolphin
+baloon
+firefox
 ...
 ```
 

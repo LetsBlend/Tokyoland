@@ -6,6 +6,8 @@
 
 My goal is to eventually shape this into a well-rounded, **Tokyonight-themed** Hyprland setup, inspired by the [Tokyonight Neovim plugin](https://github.com/folke/tokyonight.nvim) by **folke**.
 
+![2025-05-18-183426_hyprshot](https://github.com/user-attachments/assets/fbb5d3f3-d90e-4b3b-adef-0466d0a0147f)
+
 ---
 
 ## 🚀 Installation
@@ -27,7 +29,7 @@ For firefox you will need the dark reader plugin and import the Dark-Reader-Sett
 You’ll need a few essential packages for this config to work properly.  
 I couldnt keep track of all the dependencies, but here are some that i remembered.
 QT Application theming is managed by kvantum, while gtk applications are managed by nwg-look
-Also the tokyonight theme for Qt seems to be a bit broken, which is why I am using the cattpuccin moccha blue for dolphin, which is very similar.
+Also the tokyonight theme for Qt seems to be a bit broken, which is why I am using the cattpuccin moccha blue for dolphin, looks pretty much the same as the tokyo night theme.
 
 ```bash
 hyprland waybar wofi kitty rofi

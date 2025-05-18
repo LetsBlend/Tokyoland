@@ -29,16 +29,22 @@ QT Applications are managed by kvantum, while gtk are managed by nwg-look
 Also theme QT tokyonight theme seems to be a bit broken, which is why I am using the cattpuccin moccha blue theme
 
 ```bash
-sudo pacman -S hyprland waybar wofi kitty rofi \
-             hyprpaper hyprlock hypridle \
-             wl-clipboard \
-             nwg-look qt5ct qt6ct kvantum \
-             gtk-engine-murrine ttf-nerd-fonts-symbols-common \
+hyprland waybar wofi kitty rofi
+hyprpaper hyprlock hypridle
+wl-clipboard
+nwg-look qt5ct qt6ct kvantum
+gtk-engine-murrine ttf-nerd-fonts-symbols-common
+...
 ```
 ---
 
 ```bash
-yay -S ttf-jetbrains-mono-nerd
+ttf-jetbrains-mono-nerd
+nvim
+vesktop
+spotify
+spicetify - and its tokyonighttheme
+...
 ```
 
 ---

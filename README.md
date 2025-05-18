@@ -17,9 +17,6 @@ As of now, there is only a manual installation.
 
 #### 📁 Copy Config Files
 Copy everything inside this repo's `.config` folders to your local `~/.config/` directory - or only the modules that interest you.
-
----
-
 Then, edit the `~/.config/hypr/hyprpaper.conf` and make sure it points to the correct wallpaper path.
 
 ---
@@ -38,6 +35,7 @@ sudo pacman -S hyprland waybar wofi kitty rofi \
              nwg-look qt5ct qt6ct kvantum \
              gtk-engine-murrine ttf-nerd-fonts-symbols-common \
 ```
+---
 
 ```bash
 yay -S ttf-jetbrains-mono-nerd

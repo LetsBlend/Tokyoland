@@ -4,7 +4,7 @@
 > This is **not a Hyprland distribution**, but rather a personal **backup of my configuration files** — at least for now.  
 > That said, contributions and improvements are always welcome!
 
-My goal is to eventually shape this into a well-rounded, **Tokyonight-themed** Hyprland setup, inspired by the beautiful [Tokyonight Neovim plugin](https://github.com/folke/tokyonight.nvim) by **folke**.
+My goal is to eventually shape this into a well-rounded, **Tokyonight-themed** Hyprland setup, inspired by the [Tokyonight Neovim plugin](https://github.com/folke/tokyonight.nvim) by **folke**.
 
 ---
 
@@ -52,7 +52,7 @@ yay -S swww cava tokyonight-gtk-theme-git tokyonight-icons-git
 
 ## ❤️ Love goes out to
 
-- By boy [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for the original color inspiration
+- My boy [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim) for the original color inspiration
 - The Hyprland community making a desktop environmant satisfying to use.
 
 ---

@@ -27,24 +27,21 @@ Then, edit the `~/.config/hypr/hyprpaper.conf` and make sure it points to the co
 #### 📦 Install Dependencies
 
 You’ll need a few essential packages for this config to work properly.  
-I couldnt keep track of all the dependencies, but here are some of the main requirement
+I couldnt keep track of all the dependencies, but here are some that i remembered.
+QT Applications are managed by kvantum, while gtk are managed by nwg-look
+Also theme QT tokyonight theme seems to be a bit broken, which is why I am using the cattpuccin moccha blue theme
 
-##### 🧪 From Official Repos (Pacman):
 ```bash
 sudo pacman -S hyprland waybar wofi kitty rofi \
              hyprpaper hyprlock hypridle \
-             grim slurp wl-clipboard \
-             nwg-look qt5ct qt6ct \
+             wl-clipboard \
+             nwg-look qt5ct qt6ct kvantum \
              gtk-engine-murrine ttf-nerd-fonts-symbols-common \
-             playerctl brightnessctl
 ```
 
-##### 🧪 From AUR (via yay):
 ```bash
-yay -S swww cava tokyonight-gtk-theme-git tokyonight-icons-git
+yay -S ttf-jetbrains-mono-nerd
 ```
-
-> Make sure `yay` is installed: `sudo pacman -S yay`
 
 ---
 

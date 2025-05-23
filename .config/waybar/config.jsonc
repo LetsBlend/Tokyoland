@@ -161,7 +161,7 @@
     "format-disconnected": "󰤭 ",
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
     "tooltip-format": "Connected to {essid}",
-    "on-click": "networkmanager_dmenu --kitty" // OR "alacritty -e nmtui"
+    "on-click": "networkmanager_dmenu" // OR "alacritty -e nmtui"
   },
   "bluetooth": {
     "format": " ",  // or use {device_alias} if you want the name

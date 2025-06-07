@@ -1,0 +1,82 @@
+* {
+    font-family: JetBrainsMono NF;
+    background-image: none;
+    font-size: 28px;
+}
+
+window {
+    background-color: transparent;
+}
+
+button {
+
+    color: #ffffff; 
+    background-color: @main-bg;
+    outline-style: none;
+    border-width: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% auto;
+    box-shadow: none;
+    text-shadow: none;
+    animation: gradient_f 20s ease-in infinite;
+}
+
+button:focus {
+    background-color: @wb-act-bg;
+    /* background-size: 30%; */
+}
+
+button:hover {
+    /* background-color: rgba(1, 1, 1, 1); */
+    border: 3px solid #B394ED; /* Light blue border */
+    background-size: 42%;
+    border-radius: 12px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+}
+
+button:hover#logout {
+    border-radius: 12px;
+    margin : 0 10px;
+}
+
+button:hover#suspend {
+    border-radius: 12px;
+    margin : 0 10px;
+}
+
+button:hover#shutdown {
+    border-radius: 12px;
+    margin : 0 10px;
+}
+
+button:hover#reboot {
+    border-radius: 12px;
+    margin : 0 10px;
+}
+
+#logout {
+    background-image: image(url("file:///home/david/.config/wlogout/icons/logout_blue.png"), url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+    border-radius: 0px 0px 0px 0px;
+    margin : 20px 0px 10px 0px;
+}
+
+#suspend {
+    background-image: image(url("file:///home/david/.config/wlogout/icons/suspend_blue.png"), url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+    border-radius: 0px 0px 0px 0px;
+    margin : 20px 0px 10px 0px;
+}
+
+#shutdown {
+    background-image: image(url("file:///home/david/.config/wlogout/icons/shutdown_blue.png"), url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+    border-radius: 0px 0px 0px 0px;
+    margin : 20px 0px 10px 0px;
+}
+
+#reboot {
+    background-image: image(url("file:///home/david/.config/wlogout/icons/reboot_blue.png"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    border-radius: 0px 0px 0px 0px;
+    margin : 20px 0px 10px 0px;
+}
+

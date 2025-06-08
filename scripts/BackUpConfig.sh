@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Backup destination
-BACKUP_DIR="$HOME/01_usr/dev/hyprland/Tokyoland"
+BACKUP_DIR="$HOME/01_sys/installer/Tokyoland"
 
 # Create backup directory if it doesn't exist
 mkdir -p "$BACKUP_DIR"
@@ -12,12 +12,16 @@ DOTFILES=(
   ".config/hypr"
   ".config/kitty"
   ".config/waybar"
+  ".config/wlogout"
   ".config/rofi"
   ".config/nvim"
   ".config/Kvantum"
   ".config/qt5ct"
   ".config/vesktop/themes"
   ".config/btop"
+  ".config/cava"
+  ".config/spicetify"
+  ".config/dolphinrc"
 )
 
 # Copy each one to the backup dir, preserving relative path from $HOME

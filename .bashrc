@@ -18,9 +18,11 @@ export PATH="$HOME/02_sys/programs:$PATH"
 alias vesktop='discord --enable-features=UseOzonePlatform --ozone-platform=wayland'
 alias spotify='spotify --enable-features=UseOzonePlatform --ozone-platform=wayland'
 
-~/02_sys/programs/HelpLaunch.sh
+~/01_sys/programs/HelpLaunch.sh
 
 # Powerline-style prompt without git info
 
 PS1='\[\e[30;44m\] \u@\h \[\e[30;45m\] \w \[\e[0m\] '
 
+
+export PATH=$PATH:/home/david/.spicetify

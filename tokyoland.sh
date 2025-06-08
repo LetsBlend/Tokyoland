@@ -17,7 +17,7 @@ echo "---------------------------------------------------------------"
 cp -r ./.config ~/
 cp .bashrc ~/
 mkdir /etc/default
-cp default.conf /etc/keyd/
+cp ./etc/keyd/default.conf /etc/keyd/
 mkdir ~/01_sys/programs/
 cp scripts/HelpLaunch.sh ~/01_sys/programs/
 
@@ -101,4 +101,6 @@ Firefox needs to be themed manually. Install a dark reader and apply the Dark-Re
 Additionally you will need to install the Firefox Color extension and paste the url from the Firefox-Color-theme file
 
 Vesktop also needs to load the vesktop.json file.
+
+The rest 'shoult' automatically be configured correctly.
 "

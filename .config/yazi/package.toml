@@ -1,0 +1,19 @@
+[[plugin.deps]]
+use = "dedukun/relative-motions"
+rev = "2e3b617"
+hash = "b67ee12053113983273e9118a7d1272b"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "aeca767"
+hash = "a7ab702e1ef0c097defbc976ed34c186"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "aeca767"
+hash = "277ba273e5d3d647feb5808d0fe4e4e0"
+
+[[flavor.deps]]
+use = "BennyOe/tokyo-night"
+rev = "b3950bf"
+hash = "319ce574cdb2865baf4323db90456504"

@@ -1,5 +1,11 @@
 MenuBar=Disabled
 
+[DetailsMode]
+PreviewSize=32
+
+[FoldersPanel]
+HiddenFilesShown=true
+
 [General]
 Version=202
 ViewPropsTimestamp=2025,6,7,18,20,47.263

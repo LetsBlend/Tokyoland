@@ -13,62 +13,85 @@ echo "---------------------------------------------------------------"
 echo "COPYING CONFIG FILES"
 echo "---------------------------------------------------------------"
 
-#copying config files
-cp -r ./.config ~/
+# copying config files
+cp -r .config ~/
 cp .bashrc ~/
 mkdir /etc/default
-cp ./etc/keyd/default.conf /etc/keyd/
-mkdir ~/01_sys/programs/
+cp etc/keyd/default.conf /etc/keyd/
+mkdir ~/01_sys/programs
 cp scripts/HelpLaunch.sh ~/01_sys/programs/
+mkdir /usr/share/sddm/themes
+cp sddm/themes /usr/share/sddm/
+cp sddm/sddm.conf /etc/
 
 echo "---------------------------------------------------------------"
 echo "INSTALLING PACMAN PACKAGES"
 echo "---------------------------------------------------------------"
 #pacman packages
 pacmanpkg=(
-	neovim
+	# core
 	wl-clipboard
+	# blueman
 	unzip
 	keyd
+	rsync
+	pamixer
+	man
+	tldr
+	yazi
+	fzf
+	fd
+	zeoxide
+	trash-cli
+
+	# theming
 	qt5ct
 	qt6ct
 	kvantum
+
+	# desktop apps
 	rofi-wayland
 	waybar
-	# blueman
+	firefox
+
+	# useful and fun stuff
 	btop
 	cava
+	cmatrix
 	fastfetch
-	rsync
+	ark
+	kio-admin
 	hyprpicker
-	firefox
+	hyprpaper
+
+	# development
+	neovim
+	cmake
+	rustup
 )
 
 for package in ${pacmanpkg[@]}; do
 	sudo pacman -S --noconfirm ${package}
 done
 
-echo "---------------------------------------------------------------"
-echo "STARTING DAEMONS"
-echo "---------------------------------------------------------------"
-#start daemons
-sudo systemctl enable --now keyd
-# sudo systemctl enable bluetooth.service
-# sudo systemctl start bluetooth.service
 
 echo "---------------------------------------------------------------"
 echo "INSTALLLING AUR PACKAGES"
 echo "---------------------------------------------------------------"
-#aur packages
+# aur packages
 git clone https://aur.archlinux.org/yay.git ~/01_sys/installer/yay
 cd ~/01_sys/installer/yay
 makepkg -si
 cd -
 
 aurpkg=(
+	#core
+	ttf-jetbrains-mono-nerd
 	wlogout
 	wttrbar
-	ttf-jetbrains-mono-nerd
+	hyprshot
+
+	# desktop apps
 	vesktop
 	spotify
 	spicetify-cli
@@ -82,6 +105,11 @@ echo "---------------------------------------------------------------"
 echo "LAUNCHING APPLICATIONS"
 echo "---------------------------------------------------------------"
 sudo systemctl enable --now keyd
+# sudo systemctl enable bluetooth.service
+# sudo systemctl start bluetooth.service
+
+rustup default stable
+rustup component add rust-analyzer
 
 sudo chmod -R a+wr /opt/spotify
 spicetify backup apply
@@ -102,5 +130,5 @@ Additionally you will need to install the Firefox Color extension and paste the 
 
 Vesktop also needs to load the vesktop.json file.
 
-The rest 'shoult' automatically be configured correctly.
+The rest 'should' automatically be configured correctly.
 "

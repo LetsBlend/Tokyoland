@@ -22,6 +22,7 @@ DOTFILES=(
   ".config/cava"
   ".config/spicetify"
   ".config/dolphinrc"
+  ".config/yazi"
 )
 
 # Copy each one to the backup dir, preserving relative path from $HOME

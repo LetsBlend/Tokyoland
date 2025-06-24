@@ -18,6 +18,11 @@ use = "bulletmark/cdhist"
 rev = "db4a161"
 hash = "34b7f05a5591b6280388fbb682669b1a"
 
+[[plugin.deps]]
+use = "boydaihungst/save-clipboard-to-file"
+rev = "2de13b7"
+hash = "e55954e7fe9cee5eb89c7d25a70dac52"
+
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
 rev = "b3950bf"

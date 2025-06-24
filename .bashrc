@@ -27,6 +27,7 @@ PS1='\[\e[30;44m\] \u@\h \[\e[30;45m\] \w \[\e[0m\] '
 export PATH=$PATH:/home/david/.spicetify
 
 function toggle_yazi() {
+	printf '\033[1A\033[2K'
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
@@ -36,12 +37,17 @@ function toggle_yazi() {
 }
 
 function toggle_nvim() {
-	nvim
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
+	printf '\033[1A\033[2K'
+	local tmp
+	tmp="$(mktemp -t "nvim-cwd.XXXXXX")"
+
+	# Open Neovim with a Lua hook to write the cwd to the tmp file
+	nvim --cmd "autocmd VimLeavePre * lua vim.fn.writefile({vim.fn.getcwd()}, '$tmp')" "$@"
+
 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
 		cd -- "$cwd"
 	fi
 	rm -f -- "$tmp"
-
+	
+	toggle_yazi
 }

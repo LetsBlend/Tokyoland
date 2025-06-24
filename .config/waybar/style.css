@@ -58,6 +58,7 @@ button:hover {
 
 #clock,
 #pulseaudio,
+#custom-input,
 #custom-logo,
 #custom-power,
 #custom-spotify,
@@ -86,6 +87,7 @@ button:hover {
 #clock:hover,
 #clock.simpleclock:hover,
 #pulseaudio:hover,
+#custom-input:hover,
 #custom-logo:hover,
 #custom-power:hover,
 #custom-spotify:hover,
@@ -107,20 +109,20 @@ button:hover {
 }
 
 #mpris.playing {
-  margin: 0.4rem 0.5rem 0.4rem 0;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  /* margin: 0.4rem 0.5rem 0.4rem 0; */
+  /* border-top-left-radius: 6px; */
+  /* border-bottom-left-radius: 6px; */
+  /* border-top-right-radius: 6px; */
+  /* border-bottom-right-radius: 6px; */
   /* color: #a6e3a1; */
 }
 
 #mpris.paused {
-  margin: 0.4rem 0.5rem 0.4rem 0;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  /* margin: 0.4rem 0.5rem 0.4rem 0; */
+  /* border-top-left-radius: 6px; */
+  /* border-bottom-left-radius: 6px; */
+  /* border-top-right-radius: 6px; */
+  /* border-bottom-right-radius: 6px; */
   color: #9399b2;
 }
 
@@ -150,8 +152,8 @@ window#waybar.empty #window {
 }
 
 #clock.simpleclock {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  /* border-top-left-radius: 6px; */
+  /* border-bottom-left-radius: 6px; */
   /* color: #b29ffc; */
 }
 
@@ -159,13 +161,10 @@ window#waybar.empty #window {
   color: #cdd6f4;
 }
 
-#pulseaudio {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  /* color: #b4befe; */
-}
-
 #pulseaudio.muted {
+  color: #a6adc8;
+}
+#custom-input.muted {
   color: #a6adc8;
 }
 
@@ -178,17 +177,19 @@ window#waybar.empty #window {
 }
 
 #battery {
-  margin: 0.4rem 0.5rem 0.4rem 0;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  /* margin: 0.4rem 0.5rem 0.4rem 0; */
+  /* border-top-right-radius: 6px; */
+  /* border-bottom-right-radius: 6px; */
   /* color: #db81c5;  */
 }
 
 #network {
+  padding: 0.3rem 0.5rem;
   /* color: #b29ffc; */
 }
 
 #bluetooth {
+  padding: 0.3rem 0.5rem;
   /* color: #b29ffc; */
 }
 
@@ -205,44 +206,45 @@ window#waybar.empty #window {
 }
 
 #custom-weather {
-  margin: 0.4rem 0.5rem 0.4rem 0;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  /* margin: 0.4rem 0.5rem 0.4rem 0; */
+  /* border-top-right-radius: 6px; */
+  /* border-bottom-right-radius: 6px; */
   /* color: #b29ffc; */
 }
 
 #power-profiles-daemon.performance {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  /* border-top-left-radius: 6px; */
+  /* border-bottom-left-radius: 6px; */
+  /* border-top-right-radius: 6px; */
+  /* border-bottom-right-radius: 6px; */
   color: #e3a3b5;
 }
 
 #power-profiles-daemon.balanced {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  /* border-top-left-radius: 6px; */
+  /* border-bottom-left-radius: 6px; */
+  /* border-top-right-radius: 6px; */
+  /* border-bottom-right-radius: 6px; */
   /* color: #b29ffc; */
 }
 
 #power-profiles-daemon.power-saver {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  /* border-top-left-radius: 6px; */
+  /* border-bottom-left-radius: 6px; */
+  /* border-top-right-radius: 6px; */
+  /* border-bottom-right-radius: 6px; */
   color: #a3d1a6;
 }
 
 #custom-notification {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  /* border-top-right-radius: 6px; */
+  /* border-bottom-right-radius: 6px; */
 }
 
 #custom-colorpicker {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  padding: 0.3rem 0.5rem;
+  /* border-top-left-radius: 6px; */
+  /* border-bottom-left-radius: 6px; */
 }
 
 tooltip {

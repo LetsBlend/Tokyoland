@@ -23,6 +23,8 @@ cp scripts/HelpLaunch.sh ~/01_sys/programs/
 mkdir /usr/share/sddm/themes
 cp sddm/themes /usr/share/sddm/
 cp sddm/sddm.conf /etc/
+mkdir /usr/share/applications/
+cp usr/share/applications/ /usr/share/applications/
 
 echo "---------------------------------------------------------------"
 echo "INSTALLING PACMAN PACKAGES"
@@ -48,11 +50,14 @@ pacmanpkg=(
 	qt5ct
 	qt6ct
 	kvantum
+	nwg-look
+	gtk-engine-murrine
 
 	# desktop apps
 	rofi-wayland
 	waybar
 	firefox
+	ripdrag
 
 	# useful and fun stuff
 	btop

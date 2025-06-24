@@ -1,0 +1,9 @@
+[17:27:56 2025-06-21] FETCHING Version 2.40.11
+[17:27:56 2025-06-21] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.40.11/spicetify-2.40.11-linux-amd64.tar.gz
+[17:27:57 2025-06-21] EXTRACTING /home/david/.spicetify/spicetify.tar.gz
+[17:27:57 2025-06-21] SETTING EXECUTABLE PERMISSIONS TO /home/david/.spicetify/spicetify
+[17:27:57 2025-06-21] REMOVING /home/david/.spicetify/spicetify.tar.gz
+[17:27:57 2025-06-21] spicetify path already set in /home/david/.bashrc, continuing...
+[17:27:57 2025-06-21] spicetify path already set in /home/david/.bash_profile, continuing...
+[17:27:57 2025-06-21] spicetify v2.40.11 was installed successfully to /home/david/.spicetify
+[17:27:57 2025-06-21] Run 'spicetify --help' to get started

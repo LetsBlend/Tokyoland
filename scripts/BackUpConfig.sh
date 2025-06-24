@@ -23,6 +23,8 @@ DOTFILES=(
   ".config/spicetify"
   ".config/dolphinrc"
   ".config/yazi"
+  ".config/gtk-3.0"
+  ".config/gtk-4.0"
 )
 
 # Copy each one to the backup dir, preserving relative path from $HOME
